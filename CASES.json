@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "c1",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "c2",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "c3",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "a1",
+      "process": 1,
+      "received": "c2"
+    },
+    {
+      "id": "a2",
+      "process": 1,
+      "received": null
+    },
+    {
+      "id": "a3",
+      "process": 1,
+      "received": null
+    },
+    {
+      "id": "b1",
+      "process": 2,
+      "received": "c3"
+    },
+    {
+      "id": "b2",
+      "process": 2,
+      "received": null
+    },
+    {
+      "id": "b3",
+      "process": 2,
+      "received": null
+    },
+    {
+      "id": "c4",
+      "process": 0,
+      "received": "a3"
+    },
+    {
+      "id": "c5",
+      "process": 0,
+      "received": "b3"
+    },
+    {
+      "id": "c6",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "c7",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "c8",
+      "process": 0,
+      "received": null
+    },
+    {
+      "id": "a4",
+      "process": 1,
+      "received": "c7"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m2",
+      "sender": 2,
+      "seq": 0,
+      "deps": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m3",
+      "sender": 0,
+      "seq": 1,
+      "deps": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m1",
+      "sender": 0,
+      "seq": 0,
+      "deps": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m1",
+      "sender": 0,
+      "seq": 0,
+      "deps": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "keys": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "frequencies": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    8,
+    8,
+    1
+  ],
+  "before": {
+    "A": 2,
+    "B": 7,
+    "C": 13
+  },
+  "after": {
+    "A": 2,
+    "B": 7,
+    "C": 13,
+    "D": 10
+  },
+  "hot_key": 10,
+  "hot_frequency": 20,
+  "limits": {
+    "moved": 3,
+    "max_load": 16
+  }
+}
